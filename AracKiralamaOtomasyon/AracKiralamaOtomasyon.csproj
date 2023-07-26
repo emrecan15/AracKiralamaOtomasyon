@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0075D9B-5C04-4D95-978C-5885D65E7D54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AracKiralamaOtomasyon</RootNamespace>
+    <AssemblyName>AracKiralamaOtomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountSettingsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSettingsScreen.Designer.cs">
+      <DependentUpon>AccountSettingsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminScreen.Designer.cs">
+      <DependentUpon>AdminScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerManagmentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerManagmentScreen.Designer.cs">
+      <DependentUpon>CustomerManagmentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Db_AracKiralamaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_AracKiralamaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Db_AracKiralamaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_AracKiralamaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Db_AracKiralamaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_AracKiralamaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Db_AracKiralamaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_AracKiralamaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Db_AracKiralamaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_AracKiralamaDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Db_AracKiralamaDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_AracKiralamaDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Db_AracKiralamaDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_AracKiralamaDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Db_AracKiralamaDataSetGetCar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_AracKiralamaDataSetGetCar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Db_AracKiralamaGetCar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_AracKiralamaGetCar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Db_AracKiralamaGetData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_AracKiralamaGetData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Db_UyeYonetimi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_UyeYonetimi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginScreen.Designer.cs">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterScreen.Designer.cs">
+      <DependentUpon>RegisterScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPasswordScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPasswordScreen.Designer.cs">
+      <DependentUpon>ResetPasswordScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleDeliveryScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleDeliveryScreen.Designer.cs">
+      <DependentUpon>VehicleDeliveryScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleManagmentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleManagmentScreen.Designer.cs">
+      <DependentUpon>VehicleManagmentScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountSettingsScreen.resx">
+      <DependentUpon>AccountSettingsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminScreen.resx">
+      <DependentUpon>AdminScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerManagmentScreen.resx">
+      <DependentUpon>CustomerManagmentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginScreen.resx">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterScreen.resx">
+      <DependentUpon>RegisterScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPasswordScreen.resx">
+      <DependentUpon>ResetPasswordScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleDeliveryScreen.resx">
+      <DependentUpon>VehicleDeliveryScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleManagmentScreen.resx">
+      <DependentUpon>VehicleManagmentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Db_AracKiralamaDataSet.xsc">
+      <DependentUpon>Db_AracKiralamaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_AracKiralamaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_AracKiralamaDataSet.xss">
+      <DependentUpon>Db_AracKiralamaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSet1.xsc">
+      <DependentUpon>Db_AracKiralamaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_AracKiralamaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_AracKiralamaDataSet1.xss">
+      <DependentUpon>Db_AracKiralamaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSet2.xsc">
+      <DependentUpon>Db_AracKiralamaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_AracKiralamaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_AracKiralamaDataSet2.xss">
+      <DependentUpon>Db_AracKiralamaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSet3.xsc">
+      <DependentUpon>Db_AracKiralamaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_AracKiralamaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_AracKiralamaDataSet3.xss">
+      <DependentUpon>Db_AracKiralamaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSet4.xsc">
+      <DependentUpon>Db_AracKiralamaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_AracKiralamaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_AracKiralamaDataSet4.xss">
+      <DependentUpon>Db_AracKiralamaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSet5.xsc">
+      <DependentUpon>Db_AracKiralamaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_AracKiralamaDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_AracKiralamaDataSet5.xss">
+      <DependentUpon>Db_AracKiralamaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSet6.xsc">
+      <DependentUpon>Db_AracKiralamaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_AracKiralamaDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_AracKiralamaDataSet6.xss">
+      <DependentUpon>Db_AracKiralamaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSetGetCar.xsc">
+      <DependentUpon>Db_AracKiralamaDataSetGetCar.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaDataSetGetCar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_AracKiralamaDataSetGetCar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_AracKiralamaDataSetGetCar.xss">
+      <DependentUpon>Db_AracKiralamaDataSetGetCar.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaGetCar.xsc">
+      <DependentUpon>Db_AracKiralamaGetCar.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaGetCar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_AracKiralamaGetCar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_AracKiralamaGetCar.xss">
+      <DependentUpon>Db_AracKiralamaGetCar.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaGetData.xsc">
+      <DependentUpon>Db_AracKiralamaGetData.xsd</DependentUpon>
+    </None>
+    <None Include="Db_AracKiralamaGetData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_AracKiralamaGetData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_AracKiralamaGetData.xss">
+      <DependentUpon>Db_AracKiralamaGetData.xsd</DependentUpon>
+    </None>
+    <None Include="Db_UyeYonetimi.xsc">
+      <DependentUpon>Db_UyeYonetimi.xsd</DependentUpon>
+    </None>
+    <None Include="Db_UyeYonetimi.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_UyeYonetimi.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_UyeYonetimi.xss">
+      <DependentUpon>Db_UyeYonetimi.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginLeftIcon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\customerService.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\logoBgClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\BackIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\3324498.ico" />
+    <Content Include="Images\cizgi.png" />
+    <Content Include="Images\dikCizgi.png" />
+    <Content Include="Images\logobgclear.ico" />
+    <Content Include="Images\yatayCizgi.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
